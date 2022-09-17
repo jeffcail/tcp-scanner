@@ -12,7 +12,7 @@ func main() {
 	s := os.Args[1]
 	start := time.Now()
 	var wg sync.WaitGroup
-	for i := 21; i < 120; i++ {
+	for i := 1; i < 65525; i++ {
 		wg.Add(1)
 		go func(j int) {
 			defer wg.Done()
